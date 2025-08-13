@@ -58,7 +58,7 @@ ion-card-content {
   color: #333;
 
    .iconsb {
-  margin-left: auto;
+    margin-left: auto;
   display: flex;
   align-items: center;
 }
@@ -111,4 +111,36 @@ ion-card-content {
 /* Remova o mini-avatar sobreposto da imagem grande, se não for usar */
 .image-wrapper .mini-avatar {
   display: none;
+}
+
+.feed-content {
+  padding: 0;
+  margin: 0;
+  height: 70vh; // ajuste conforme necessário
+  overflow-y: auto;
+}
+
+.feed-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px; // espaço entre posts
+}
+
+.feed-item {
+  background: #fff;
+  border-radius: 8px;
+  padding-bottom: 16px;
+}
+
+ .iconsc {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.iconsc ion-icon {
+  margin-left: 8px;
+  font-size: 26px;
+  margin-right: 10px;
 }
