@@ -1,0 +1,7 @@
+{
+  "name": "Social-senai",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
