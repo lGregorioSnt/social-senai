@@ -1,20 +1,59 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+<ion-card>
+ <ion-header>
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title>
+        <div class="title-row">
+          <span>Instagram</span>
+          <span class="icons">
+            <ion-icon name="heart-circle-outline"></ion-icon>
+            <ion-icon name="chatbubbles-outline"></ion-icon>
+          </span>
+        </div>
+      </ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <ion-card-header>
+    <div class="header-content">
+      <img alt="Silhouette of mountains" src="../../assets/img/ramon.jpg" />
+      <img alt="Silhouette of mountains" src="../../assets/img/enciso.jpg" />
+      <img alt="Silhouette of mountains" src="../../assets/img/carlos.png" />
+      <img alt="Silhouette of mountains" src="../../assets/img/vitor.jpg" />
+      <img alt="Silhouette of mountains" src="../../assets/img/061758d956e26f100f08070eba6e34c0.jpg">
+      <ion-icon style="font-size: 30px;" name="arrow-forward-circle-outline"></ion-icon>
+    </div>
+    
+  </ion-card-header>
+
+  <ion-card-content class="feed-content">
+  <div class="post-header">
+    <img class="mini-avatar" alt="Avatar pequeno" src="../../assets/img/ramon.jpg" />
+    <span class="post-username">Ramon Sosa</span>
+    <span class="iconsb">
+          <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+          </span>
   </div>
-</ion-content>
+  <div class="image-wrapper">
+    <img alt="Imagem grande" src="../../assets/img/3897c0e40e04bf064a6dbedcdeb739be.jpg" />
+  </div>
+   
+  </ion-card-content>
+</ion-card>
+
+<ion-tab-bar slot="bottom">
+  <ion-tab-button>
+    <ion-icon name="home-outline"></ion-icon>
+  </ion-tab-button>
+  <ion-tab-button>
+    <ion-icon name="search"></ion-icon>
+  </ion-tab-button>
+  <ion-tab-button>
+    <ion-icon name="push-outline"></ion-icon>
+  </ion-tab-button>
+  <ion-tab-button>
+    <ion-icon name="albums-outline"></ion-icon>
+  </ion-tab-button>
+  <ion-tab-button>
+    <ion-icon name="person-circle-outline"></ion-icon>
+  </ion-tab-button>
+</ion-tab-bar>

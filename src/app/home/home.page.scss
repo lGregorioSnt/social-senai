@@ -1,27 +1,114 @@
-#container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
+ion-card {
   margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+  -webkit-box-shadow: none;
 }
 
-#container a {
-  text-decoration: none;
+ion-header {
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+.title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icons ion-icon {
+  margin-left: 8px;
+  font-size: 26px;
+}
+
+ion-card-header {
+  width: 100%;
+}
+
+.header-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.header-content img {
+  width: 60px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.header-content img:last-child {
+  margin-right: 0;
+}
+
+.username {
+  margin-left: 10px;
+}
+
+ion-card-content {
+
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+
+   .iconsb {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.iconsb ion-icon {
+  margin-left: 8px;
+  font-size: 26px;
+  margin-right: 10px;
+}
+
+}
+
+/* NOVO: Estilo para o header do post acima da imagem grande */
+.post-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.post-header .mini-avatar {
+
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 12px;
+  margin-right: 10px;
+  object-fit: cover;
+  border: 2px solid #fff;
+
+ 
+}
+
+.post-username {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Mantém o estilo da imagem grande */
+.image-wrapper {
+  position: relative;
+  display: block;
+}
+
+.image-wrapper img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Remova o mini-avatar sobreposto da imagem grande, se não for usar */
+.image-wrapper .mini-avatar {
+  display: none;
 }
